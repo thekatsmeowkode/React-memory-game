@@ -9,7 +9,7 @@ padding:0;
 font-family: 'Rye-Regular', 'Times New Roman', Times, serif}
 
 .big-container {
-  background-color: orangered;
+  background-image: linear-gradient(to top, #870000, #291007);
   height: 100vh;
 }
 
@@ -27,7 +27,7 @@ font-family: 'Rye-Regular', 'Times New Roman', Times, serif}
 
 .scoreboard {
   height: 5rem;
-  width: 30%;
+  width: 40%;
 }
 
 .score-text {
@@ -36,8 +36,9 @@ font-family: 'Rye-Regular', 'Times New Roman', Times, serif}
 
 .score-text-container {
   display:flex;
+  font-size: 2rem;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .card-container {
@@ -46,14 +47,12 @@ font-family: 'Rye-Regular', 'Times New Roman', Times, serif}
 
 img {
   height: 300px;
+  cursor:pointer;
+  pointer-events: all;
 }
 
 .first-row {
-  display:flex;
-  width:100%
-}
-
-.second-row {
-  display:flex;
-  width:100%;
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows:1fr 1fr
 }

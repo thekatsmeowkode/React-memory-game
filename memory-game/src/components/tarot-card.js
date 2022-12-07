@@ -4,6 +4,6 @@ export default function TarotCard(props) {
 
     return (
     <div className='card-container'>
-        <img src={props.imageFile} alt={`{${props.cardName}}`}></img>
+        <img id={props.cardName} onClick={props.onClick} src={props.imageFile} alt={`{${props.cardName}}`}></img>
     </div>)
 }
