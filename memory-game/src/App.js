@@ -67,10 +67,11 @@ function App() {
         return null
       }
       else {
-        return setCardsChosen((prevState) => ([...prevState, chosenCard]))
+        return null
       }
   })
   shuffleArray(cards)
+  setCardsChosen((prevState) => ([...prevState, chosenCard]))
   setCurrentScore((prevScore) => (prevScore + 1))
   }
 
